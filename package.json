@@ -14,14 +14,14 @@
   },
   "devDependencies": {
     "async-to-gen": "^1.3.0",
-    "ava": "^0.21.0",
+    "tape": "^4.9.1",
     "micro": "9.3.3",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
     "standard": "^10.0.0",
     "test-listen": "^1.0.0"
   },
-  "ava": {
+  "tape": {
     "require": [
       "async-to-gen/register"
     ],
@@ -32,6 +32,6 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "mkdir -p dist && async-to-gen lib/index.js > dist/index.js",
-    "test": "standard && ava"
+    "test": "standard && tape"
   }
 }

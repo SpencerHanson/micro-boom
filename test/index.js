@@ -1,4 +1,4 @@
-import test from 'ava'
+import test from 'tape'
 import micro from 'micro'
 import request from 'request-promise'
 import listen from 'test-listen'
